@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Pricing Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add the logo image above the form -->
+        <div class="logo">
+            <img src="new-header-logoa.png.webp" alt="Valley Plumbing Logo" class="logo-img">
+        </div>
+        <div class="container">
+        <h1>Invoice Pricing Calculator</h1>
+        
+        <form id="pricing-form">
+            <label for="laborHours">Enter Labor Hours:</label>
+            <input type="number" id="laborHours" name="laborHours" step="0.01" required>
+
+            <label for="materialCost">Enter Material Cost ($):</label>
+            <input type="number" id="materialCost" name="materialCost" step="0.01" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="results">
+            <h2>Calculation Results</h2>
+            <p><strong>Total Labor Cost:</strong> <span id="laborResult">$0.00</span></p>
+            <p><strong>Total Material Cost (with tax):</strong> <span id="materialResult">$0.00</span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
